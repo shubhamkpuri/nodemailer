@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container center-align">
+        <h1 class="teal-text">Create User</h1>
+
+            <div class="row">
+                <div class="input-field col m6 offset-m3 s12">
+                    <input id="name" type="text" class="validate" name="name">
+                    <label for="name">Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col m6 offset-m3 s12">
+                    <input id="email" type="email" class="validate" name="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <button class="btn" id="createContact" onclick="send()"> Create User  <i class="material-icons right">send</i></button>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript">
+        M.updateTextFields();
+    </script>
+</body>
+
+</html>
